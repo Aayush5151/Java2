@@ -1,0 +1,30 @@
+import java.util.*;
+
+class Main{
+    public static void main(String [] args){
+        Scanner sc=new Scanner(System.in);
+        int a[][]={{1,4,6}, {0,9,2}, {1,6,8}};
+        int b[][]={{9,8,7}, {6,5,4}, {3,2,1}};
+        int c[][]= new int[3][3];
+        int d[][]=new int[3][3];
+        
+        for(int i=0;i<3; i++){
+            for(int j=0;j<3;j++){
+                c[i][j]=a[i][j]+b[i][j];
+            }
+       }
+       for(int i=0;i<3; i++){
+            for(int j=0;j<3;j++){
+                System.out.println(c[i][j]);
+            }
+       }
+       System.out.println("");
+       for(int i=0;i<3; i++){
+            for(int j=0;j<3;j++){
+                d[i][j]=a[i][j]*b[i][j];
+                System.out.println(d[i][j]);
+            }
+       }
+       
+    }
+}
